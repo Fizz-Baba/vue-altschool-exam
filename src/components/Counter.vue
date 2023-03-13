@@ -9,8 +9,8 @@
       <button class="set-value" @click="setValue">Set Value</button>
       <h2>COUNTER: {{ count }}</h2>
       <div class="btn-wrapper">
-        <button class="decrement" @click="decrement">Increment</button>
-        <button class="increment" @click="increment">Decrement</button>
+        <button class="decrement" @click="decrement">Decrement</button>
+        <button class="increment" @click="increment">Increment</button>
         <button class="reset" @click="reset">Reset</button>
       </div>
     </div>
