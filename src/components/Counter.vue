@@ -18,28 +18,21 @@
 </template>
 
 <script>
+import useCounter from "../composables/useCounter";
 export default {
   name: "Counter",
-  data() {
+  setup() {
+    const { increment, decrement, reset, setValue, count, value } =
+      useCounter();
+
     return {
-      count: 0,
-      value: "",
+      increment,
+      decrement,
+      reset,
+      setValue,
+      count,
+      value,
     };
-  },
-  methods: {
-    decrement() {
-      this.count--;
-    },
-    increment() {
-      this.count++;
-    },
-    reset() {
-      this.count = 0;
-      this.value = "";
-    },
-    setValue() {
-      this.count = parseInt(this.value);
-    },
   },
 };
 </script>
